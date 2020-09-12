@@ -1,0 +1,27 @@
+{
+  "name": "race-condition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack -w --mode='development'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bulliby/race-condition.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bulliby/race-condition/issues"
+  },
+  "homepage": "https://github.com/Bulliby/race-condition#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}

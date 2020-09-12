@@ -20,10 +20,7 @@ export default class Btns {
                 let target = event.target
                 axios.post('http://back.race.com/add', {
                     id: target.dataset.id1,
-                }).then(() => {
-                    console.log('axios');
-                    return this.setNumber.setNumberFront()
-                })
+                }).then(() => this.setNumber.setNumberFront())
                 .then((response) => {
                     target.classList.add('hide');
                     el.nextElementSibling.classList.remove('hide');
@@ -41,10 +38,7 @@ export default class Btns {
                 let target = event.target
                 axios.post('http://back.race.com/del', {
                     id: target.dataset.id2,
-                }).then(() => {
-                    console.log('axios');
-                    return this.setNumber.setNumberFront();
-                })
+                }).then(() => this.setNumber.setNumberFront())
                 .then((response) => {
                     target.classList.add('hide');
                     el.previousElementSibling.classList.remove('hide');
